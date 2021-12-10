@@ -1,2 +1,0 @@
-
-Med_Chart_App
