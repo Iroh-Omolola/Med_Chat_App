@@ -17,15 +17,16 @@ const SideBar = ({ logout }) => (
         </div>
         <div className="channel-list__sidebar__icon2">
             <div className="icon1__inner" onClick={logout}>
-                <img src={LogoutIcon} alt="Logout" width="30" />
+                <img src={LogoutIcon} alt="Logout" width="30" />      
             </div>
+            <p className="logout_desc">Log out</p>
         </div>
     </div>
 );
 
 const CompanyHeader = () => (
     <div className="channel-list__header">
-        <p className="channel-list__header__text">Medical Pager</p>
+        <p className="channel-list__header__text">Med_Chat</p>
     </div>
 )
 
@@ -127,7 +128,7 @@ const ChannelListContainer = ({ setCreateType, setIsCreating, setIsEditing }) =>
             </div>
 
             <div className="channel-list__container-responsive"
-                style={{ left: toggleContainer ? "0%" : "-89%", backgroundColor: "#005fff"}}
+                style={{ left: toggleContainer ? "0%" : "-89%", backgroundColor: "#5b1cb9b6;"}}
             >
                 <div className="channel-list__container-toggle" onClick={() => setToggleContainer((prevToggleContainer) => !prevToggleContainer)}>
                 </div>
